@@ -36,8 +36,10 @@ License: GNU/GPL Version 2 or later. http://www.gnu.org/licenses/gpl.html
     margin:0;
     font-size:14px;
     line-height:1.6em;
-    background: #1778a9 url(../images/background_0.jpg) fixed center center;
-    background-size: 100% 100%;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/card.jpg) fixed center center;
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
     height:100%;
   }
 
@@ -429,23 +431,34 @@ License: GNU/GPL Version 2 or later. http://www.gnu.org/licenses/gpl.html
     bottom:0;
     float: left;
     width:50%;
-    background:#000 url(../images/card.jpg) fixed center center;
-      -moz-box-shadow:    0 0 5px 5px rgba(0, 0, 0, 0.08);
-      -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.08);
-      box-shadow:         0 0 5px 5px rgba(0, 0, 0, 0.08);
   }
 
   .left section {
     text-align: center;
     width:60%;
     margin: 0 auto;
-      display: none
+    display: none;
+    color: white;
   }
 
   .left section h1 {
     font-weight:700;
     text-transform: uppercase;
-    margin:0 0 20px
+    margin:0 0 20px;
+    color: white;
+  }
+
+  .left section h3 {
+    color: white;
+  }
+
+  .logo {
+    width: 80px;
+    margin: auto;
+  }
+
+  .svg-logo {
+    fill: #fff;
   }
 
   .right {
@@ -454,12 +467,12 @@ License: GNU/GPL Version 2 or later. http://www.gnu.org/licenses/gpl.html
   }
 
   .right section {
-      display: none
+      display: none;
   }
 
   .right .narrow {
     margin: 0 auto;
-    width:60%
+    width:60%;
   }
 
   .right .wide {
