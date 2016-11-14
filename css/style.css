@@ -329,17 +329,20 @@ License: GNU/GPL Version 2 or later. http://www.gnu.org/licenses/gpl.html
     width: 50%;
     border:1px solid grey;
     padding:20px;
-    background: #2ccb89;
+    /*background: #2ccb89;*/
+    background: rgba(192, 192, 192, 0.5);
     margin: 0 auto;
     /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.41), 0 0 1px 20px rgba(0, 0, 0, 0.08);*/
     text-align: center;
+    border-radius: 5px;
   }
 
   input {
     width: 80%;
     padding:20px;
     margin:20px 0;
-    border:2px solid black;
+    border:1px solid rgb(192, 192, 192);
+    border-radius: 5px;
     transition: all 0.1s;
     font-size:20px;
   }
@@ -372,10 +375,16 @@ License: GNU/GPL Version 2 or later. http://www.gnu.org/licenses/gpl.html
     width: 50%;
     padding: 10px;
     border-radius: 10px;
+    font-weight: 400;
+    background-color: #337ab7;
+    border: 1px solid #2e6da4;
+    color: #fff;
   }
   
   .button:hover{
-    background-color: rgb(24, 109, 73);
+    background-color:#286090;
+    border-color: #204d74;
+    cursor: pointer;
     color: #fff;
   }
 

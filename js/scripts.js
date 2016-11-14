@@ -14,23 +14,23 @@ jQuery(window).resize(function () {
 
 function resize_intro(){
   page_height =  jQuery(window).height();
-    right_height = jQuery('.right section').height() + 40;
-    left_height = jQuery('.left section').height() + 40;
+  right_height = jQuery('.right section').height() + 40;
+  left_height = jQuery('.left section').height() + 40;
 
-     if(left_height < page_height) {
+  if(left_height < page_height) {
 
-      jQuery(".left").css('height',page_height+'px');
-      left_content_margin = ((page_height - left_height) / 2) - 30;
-      jQuery(".left section").css('margin-top',left_content_margin+'px');
+    jQuery(".left").css('height',page_height+'px');
+    left_content_margin = ((page_height - left_height) / 2);
+    jQuery(".left section").css('margin-top',left_content_margin+'px');
 
-     }
+  }
 
-     if(right_height < page_height) {
+  if(right_height < page_height) {
 
-      if(jQuery(window).width() > 800) {
-        right_content_margin = (page_height - right_height) / 2;
-        jQuery(".right section").css('margin-top',right_content_margin+'px');
-      }
+    if(jQuery(window).width() > 800) {
+      right_content_margin = (page_height - right_height) / 2;
+      jQuery(".right section").css('margin-top',right_content_margin+'px');
+    }
 
-     }
+  }
 }
